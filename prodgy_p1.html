@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu & Loading Page</title>
+	<link rel="stylesheet" href="grodigy1_styles.css">
+</head>
+<body>
+
+	<!-- Loading Page -->
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <section id="home">
+        <h1>Home</h1>
+        <p>Content for home section...</p>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Content for about section...</p>
+    </section>
+
+    <section id="services">
+        <h1>Services</h1>
+        <p>Content for services section...</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Content for contact section...</p>
+    </section>
+
+    <script>
+		// Loading Page Script
+document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.getElementById('loading');
+    setTimeout(function() {
+        loader.style.display = 'none';
+    }, 2000); // Simulating loading time
+});
+
+// Navigation Menu Script
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = '#555';
+    } else {
+        navbar.style.backgroundColor = '#333';
+    }
+});
+
+	</script>
+</body>
+</html>

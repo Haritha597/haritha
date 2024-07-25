@@ -1,0 +1,94 @@
+<style>
+		/* General Styles */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Loading Page Styles */
+		#loading {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: #808000;//Olive	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+		}
+
+		.loader {
+			border: 16px solid #f3f3f3;
+			border-top: 16px solid #3498db;
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			animation: spin 2s linear infinite;
+		}
+
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		/* Navigation Menu Styles */
+		nav {
+			position: fixed;
+			width: 100%;
+			top: 0;
+			background-color: #800000;//gray
+			transition: background-color 0.3s;
+			z-index: 100;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+
+		nav ul li {
+			margin: 0 20px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			color: white;
+			font-size: 18px;
+			padding: 15px 20px;
+			display: block;
+			transition: background-color 0.3s, color 0.3s;
+		}
+
+		nav ul li a:hover {
+			background-color: #00FF00;
+			color: #fff;
+		}
+
+		/* Content Section Styles */
+		section {
+			padding: 100px 20px;
+			margin-top: 50px;
+			height: 100vh;
+		}
+
+		#home {
+			background-color: #f4f4f4;
+		}
+
+		#about {
+			background-color: #e4e4e4;
+		}
+
+		#services {
+			background-color: #d4d4d4;
+		}
+
+		#contact {
+			background-color: #c4c4c4;
+		}
+
+	</style>
